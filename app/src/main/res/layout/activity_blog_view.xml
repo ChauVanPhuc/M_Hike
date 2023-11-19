@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Hike.HikeViewActivity"
+    android:orientation="vertical"
+    android:id="@+id/layoutDrawerBlog"
+    android:background="@drawable/img"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include
+            layout="@layout/appbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reViewShowBlog"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="70dp" />
+
+        <Button
+            android:id="@+id/btn_addBlog"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="620dp"
+            android:layout_marginLeft="320dp"
+            android:text="+" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navBlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemTextColor="@drawable/selector"
+            app:menu="@menu/bottom_nav"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        >
+        <include
+            layout="@layout/activity_menu" />
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

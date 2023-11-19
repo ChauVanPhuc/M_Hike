@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardBackgroundColor="#9999FF"
+    >
+    <LinearLayout
+        android:id="@+id/btn_itemBlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:id="@+id/txt_nameUserShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_marginLeft="220dp"
+                android:id="@+id/txt_dateBlog"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="10"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                >
+                <ImageView
+                    android:id="@+id/img_showImgBlog"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/avatar"
+                    android:layout_gravity="center"
+
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/txt_title_Hike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/txt_contentBlog"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text=""
+                    android:textSize="15sp"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/btn_likeBlog"
+                        android:layout_marginTop="60dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fav_b"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_quantityLike"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="60dp"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_feedbackBlog"
+                        android:layout_width="33dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/btn_feedback"
+                        android:backgroundTint="#FF0000"
+
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonMyBlog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <Button
+                    android:id="@+id/btn_editBlog"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_edit"
+                    />
+                <Button
+                    android:id="@+id/btn_deleteBlog"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_delete"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
